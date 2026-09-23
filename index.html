@@ -925,7 +925,7 @@
                 <h2 style="margin-bottom: 15px; color: var(--accent-gold);"><i class="fa-solid fa-user-shield"></i> Login Admin</h2>
                 <div class="form-group">
                     <label>Senha de Acesso</label>
-                    <input type="password" id="adminPasswordInput" class="form-control" placeholder="Digite a senha (padrão: admin123)">
+                    <input type="password" id="adminPasswordInput" class="form-control" placeholder="Digite a senha (padrão: 123)">
                 </div>
                 <button class="btn-interest" onclick="loginAdmin()">ENTRAR NO PAINEL</button>
             </div>
@@ -1484,7 +1484,7 @@
 
         function loginAdmin() {
             const pass = document.getElementById('adminPasswordInput').value;
-            if (pass === 'admin123' || pass === 'admin') {
+            if (pass === 'dengoso123' || pass === 'admin') {
                 document.getElementById('adminLoginView').style.display = 'none';
                 document.getElementById('adminPanelView').style.display = 'block';
                 renderAdminTable();
